@@ -2254,7 +2254,7 @@ CITY_FACTS = {
   ],
   "gurgaon": [
     "Gurgaon is a major financial and industrial hub in the National Capital Region (NCR).",
-    "It is known for its modern skyline with many high-rise buildings and corporate offices.",
+    "NI lives hereee.",
     "Gurgaon has rapidly developed into a center for IT, manufacturing, and automobile industries."
 ]
     # Add more cities and facts here
