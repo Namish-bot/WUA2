@@ -316,8 +316,7 @@
   </div>
 
   <script>
-    // Rain animation code
-    const rainContainer = document.getElementById('rain');
+     const rainContainer = document.getElementById('rain');
     const dropsCount = 100;
 
     function createDrop() {
@@ -334,18 +333,17 @@
       rainContainer.appendChild(createDrop());
     }
 
-    // Theme toggle with emojis
     const toggleBtn = document.getElementById('toggleThemeBtn');
     toggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('light');
       if(document.body.classList.contains('light')) {
-        toggleBtn.textContent = '🌙'; // moon means toggle to dark
+        toggleBtn.textContent = '🌙'; 
       } else {
-        toggleBtn.textContent = '🌞'; // sun means toggle to light
+        toggleBtn.textContent = '🌞'; 
       }
     });
 
-    // Weather fetching code
+   
     async function getWeather() {
       const city = document.getElementById('cityInput').value.trim();
       const errorElement = document.getElementById('error');
