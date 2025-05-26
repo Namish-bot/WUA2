@@ -47,9 +47,11 @@
    Obtain an API key from OpenWeatherMap.
 
   Set it as an environment variable:
+  
   bash
   Copy
   Edit
   export WEATHER_API_KEY='your_api_key_here'
+  
   4. **Run the application:**
     python app.py
