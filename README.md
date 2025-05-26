@@ -18,13 +18,6 @@
   - Wind speed
   - Atmospheric pressure
 
-- 🌈 **Weather-Responsive Background Animations**  
-  Enjoy immersive visuals based on current weather:
-  - 🌧️ Raindrops for rainy weather  
-  - ☁️ Floating clouds for cloudy skies  
-  - ☀️ Bright skies for sunny conditions  
-  - 🌫️ Subtle haze for mist/fog/smog
-
 - 🌙🌞 **Dark & Light Mode Toggle**  
   Effortlessly switch themes using moon and sun icons.
 
