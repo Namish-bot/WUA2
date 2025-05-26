@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIMBUS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; }
 
@@ -17,8 +17,39 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      overflow: hidden;
+      transition: background 0.5s ease, color 0.5s ease;
+      position: relative;
     }
 
+    /* Raindrop container */
+    .rain {
+      pointer-events: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    /* Raindrop */
+    .drop {
+      position: absolute;
+      bottom: 100%;
+      width: 2px;
+      height: 15px;
+      background: rgba(3, 218, 197, 0.7);
+      animation: fall linear infinite;
+      border-radius: 50%;
+      filter: drop-shadow(0 0 2px #03dac5);
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh);
+      }
+    }
+
+    /* Container and main styles */
     .container {
       background: rgba(40, 40, 40, 0.85);
       backdrop-filter: blur(8px);
@@ -28,6 +59,10 @@
       width: 100%;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: center;
+      z-index: 1;
+      position: relative;
+      transition: background 0.5s ease, color 0.5s ease;
+      color: #e0e0e0;
     }
 
     h1 {
@@ -52,6 +87,12 @@
       outline: none;
       background-color: #1e1e1e;
       color: #ffffff;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    input::placeholder {
+      color: #aaa;
+      transition: color 0.5s ease;
     }
 
     button {
@@ -136,6 +177,7 @@
       border-radius: 10px;
       padding: 12px;
       width: 120px;
+      color: #e0e0e0;
     }
 
     .detail-item span {
@@ -160,11 +202,102 @@
       color: #cfd8dc;
       display: none;
     }
+
+    /* Light mode styles */
+    body.light {
+      background: #e3f2fd;
+      color: #212121;
+    }
+
+    body.light .container {
+      background: rgba(255, 255, 255, 0.95);
+      color: #212121;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    body.light h1 {
+      color: #212121;
+    }
+
+    body.light input {
+      background-color: #f1f1f1;
+      color: #212121;
+    }
+
+    body.light input::placeholder {
+      color: #555;
+    }
+
+    body.light button {
+      background-color: #0288d1;
+      color: #fff;
+    }
+
+    body.light button:hover {
+      background-color: #0277bd;
+    }
+
+    body.light .detail-item {
+      background-color: #fafafa;
+      color: #212121;
+    }
+
+    body.light .detail-item span {
+      color: #666;
+    }
+
+    body.light .detail-item p {
+      color: #212121;
+    }
+
+    body.light .temp {
+      color: #212121;
+    }
+
+    body.light .description {
+      color: #555;
+    }
+
+    body.light .fact-box {
+      background-color: #d1e3f8;
+      color: #212121;
+      border-left-color: #0288d1;
+    }
+
+    body.light .error {
+      background: #f44336;
+      color: white;
+    }
+
+    /* Toggle button */
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #03dac5;
+      border: none;
+      padding: 8px 14px;
+      font-weight: 600;
+      color: #000;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 2;
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background: #00bfa5;
+    }
   </style>
 </head>
 <body>
+  <button class="toggle-btn" id="toggleThemeBtn">Light Mode</button>
+
+  <div class="rain" id="rain"></div>
+
   <div class="container">
-    <h1>Weather App</h1>
+    <h1>NIMBUS</h1>
     <div class="search-box">
       <input type="text" id="cityInput" placeholder="Enter city name" value="Hyderabad" />
       <button onclick="getWeather()">Search</button>
@@ -199,6 +332,35 @@
   </div>
 
   <script>
+    // Rain animation: create multiple raindrops randomly positioned
+    const rainContainer = document.getElementById('rain');
+    const dropsCount = 100;
+
+    function createDrop() {
+      const drop = document.createElement('div');
+      drop.classList.add('drop');
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = (0.5 + Math.random() * 0.5) + 's';
+      drop.style.animationDelay = Math.random() * 5 + 's';
+      drop.style.opacity = (0.1 + Math.random() * 0.3);
+      return drop;
+    }
+
+    for (let i = 0; i < dropsCount; i++) {
+      rainContainer.appendChild(createDrop());
+    }
+
+    // Theme toggle logic
+    const toggleBtn = document.getElementById('toggleThemeBtn');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      if(document.body.classList.contains('light')) {
+        toggleBtn.textContent = 'Dark Mode';
+      } else {
+        toggleBtn.textContent = 'Light Mode';
+      }
+    });
+
     async function getWeather() {
       const city = document.getElementById('cityInput').value.trim();
       const errorElement = document.getElementById('error');
@@ -258,6 +420,7 @@
       const errorElement = document.getElementById('error');
       errorElement.textContent = `Error: ${message}`;
       document.getElementById('weatherInfo').style.display = 'none';
+      document.getElementById('loading').style.display = 'none';
     }
 
     document.getElementById('cityInput').addEventListener('keypress', function(e) {
