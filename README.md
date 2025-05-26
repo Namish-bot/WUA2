@@ -58,3 +58,7 @@
   
   4. **Run the application:**
     python app.py
+
+**Here's a sample deployment of the application**
+
+https://wua2.onrender.com/
