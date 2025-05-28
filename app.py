@@ -44,7 +44,7 @@ CITY_FACTS = {
     ],
     "mumbai": [
         "Mumbai is the financial capital of India.",
-        "It is home to Bollywood, India’s Hindi-language film industry.",
+        "It is home to Bollywood, India's Hindi-language film industry.",
         "The city has the famous Gateway of India monument."
     ],
     "beijing": [
@@ -60,7 +60,7 @@ CITY_FACTS = {
     "osaka": [
         "Osaka is a large port city in Japan.",
         "It is famous for its modern architecture and street food culture.",
-        "Osaka is home to one of Japan’s busiest airports, Kansai International Airport."
+        "Osaka is home to one of Japan's busiest airports, Kansai International Airport."
     ],
     "new_york_city": [
         "New York City is the largest city in the United States.",
@@ -69,7 +69,7 @@ CITY_FACTS = {
     ],
     "karachi": [
         "Karachi is the largest city in Pakistan.",
-        "It serves as the country’s main seaport and financial center.",
+        "It serves as the country's main seaport and financial center.",
         "The city has a diverse population and rich cultural heritage."
     ],
     "buenos_aires": [
@@ -129,7 +129,7 @@ CITY_FACTS = {
     ],
     "shenzhen": [
         "Shenzhen is a major tech hub in southern China.",
-        "It was one of China’s first Special Economic Zones.",
+        "It was one of China's first Special Economic Zones.",
         "The city has rapidly transformed from a fishing village to a metropolis."
     ],
     "lahore": [
@@ -175,7 +175,7 @@ CITY_FACTS = {
     "tehran": [
         "Tehran is the capital of Iran.",
         "It features a mix of modern and historic architecture.",
-        "The city is Iran’s political and economic hub."
+        "The city is Iran's political and economic hub."
     ],
     "chicago": [
         "Chicago is known as the 'Windy City' in the USA.",
@@ -204,7 +204,7 @@ CITY_FACTS = {
     ],
     "luanda": [
         "Luanda is the capital of Angola.",
-        "It is one of Africa’s most important ports.",
+        "It is one of Africa's most important ports.",
         "The city has a vibrant music and cultural scene."
     ],
     "ahmedabad": [
@@ -255,7 +255,7 @@ CITY_FACTS = {
     "toronto": [
         "Toronto is the largest city in Canada.",
         "It is known for its multicultural population.",
-        "The CN Tower is one of the city’s iconic landmarks."
+        "The CN Tower is one of the city's iconic landmarks."
     ],
     "miami": [
         "Miami is famous for its beaches and nightlife.",
@@ -269,7 +269,7 @@ CITY_FACTS = {
     ],
     "houston": [
         "Houston is the largest city in Texas.",
-        "It is home to NASA’s Johnson Space Center.",
+        "It is home to NASA's Johnson Space Center.",
         "The city has a diverse economy including energy, manufacturing, and aeronautics."
     ],
     "philadelphia": [
@@ -293,7 +293,7 @@ CITY_FACTS = {
         "The city hosted the 1992 Summer Olympics."
     ],
     "melbourne": [
-        "Melbourne is known as Australia’s cultural capital.",
+        "Melbourne is known as Australia's cultural capital.",
         "It has a vibrant arts, music, and sports scene.",
         "The city hosts the Australian Open tennis tournament."
     ],
@@ -405,7 +405,7 @@ CITY_FACTS = {
     "windhoek": [
         "Windhoek is the capital of Namibia.",
         "It has a blend of German colonial and African architecture.",
-        "The city serves as the country’s political and economic center."
+        "The city serves as the country's political and economic center."
     ],
     "gaborone": [
         "Gaborone is the capital of Botswana.",
@@ -543,8 +543,8 @@ CITY_FACTS = {
     "Seoul has a history dating back over 2,000 years and is home to several historic palaces."
   ],
   "Nagoya": [
-    "Nagoya is a major port and industrial hub in Japan’s Aichi Prefecture.",
-    "It is famous for its automotive industry, housing Toyota’s headquarters.",
+    "Nagoya is a major port and industrial hub in Japan's Aichi Prefecture.",
+    "It is famous for its automotive industry, housing Toyota's headquarters.",
     "Nagoya Castle is a notable historical site and tourist attraction."
   ],
   "Hyderabad": [
@@ -748,7 +748,7 @@ CITY_FACTS = {
     "Casablanca is known for its art deco architecture and vibrant port."
   ],
   "Accra": [
-    "Accra is the capital city of Ghana.",
+    "Accra is the capital of Ghana.",
     "It is known for its vibrant culture and historic sites like Jamestown.",
     "Accra is a key economic and administrative center in West Africa."
   ],
@@ -769,7 +769,7 @@ CITY_FACTS = {
   ],
   "Harare": [
     "Harare is the capital of Zimbabwe.",
-    "It is known for its parks and gardens, including the Harare Botanical Gardens.",
+    "It is known for its beautiful parks and gardens.",
     "Harare is a commercial and communications center for Zimbabwe."
   ],
   "Kampala": [
@@ -778,477 +778,8 @@ CITY_FACTS = {
     "Kampala is the political and economic heart of Uganda."
   ],
   "Lusaka": [
-    "Lusaka is the capital city of Zambia.",
-    "It is a rapidly growing city and a commercial center.",
-    "Lusaka has a tropical climate and serves as a transport hub."
-  ],
-  "Maputo": [
-    "Maputo is the capital and largest city of Mozambique.",
-    "It is known for its Portuguese colonial architecture.",
-    "The city has a bustling port and vibrant cultural scene."
-  ],
-  "Windhoek": [
-    "Windhoek is the capital of Namibia.",
-    "It is situated in a valley surrounded by hills.",
-    "Windhoek is known for its German colonial architecture."
-  ],
-  "Gaborone": [
-    "Gaborone is the capital of Botswana.",
-    "It is located near the South African border.",
-    "Gaborone is one of the fastest-growing cities in Africa."
-  ],
-  "Kigali": [
-    "Kigali is the capital and largest city of Rwanda.",
-    "The city is known for its cleanliness and safety.",
-    "Kigali is an important commercial and cultural center."
-  ],
-  "Bujumbura": [
-    "Bujumbura is the largest city and former capital of Burundi.",
-    "It is located on the northeastern shore of Lake Tanganyika.",
-    "The city serves as Burundi's economic and transport center."
-  ],
-  "Juba": [
-    "Juba is the capital and largest city of South Sudan.",
-    "It is located on the White Nile river.",
-    "Juba is a developing city and administrative center."
-  ],
-  "Mogadishu": [
-    "Mogadishu is the capital of Somalia.",
-    "It is located on the Indian Ocean coast.",
-    "The city has a long history as a port and trading center."
-  ],
-  "Khartoum": [
-    "Khartoum is the capital of Sudan.",
-    "It lies at the confluence of the Blue Nile and White Nile rivers.",
-    "Khartoum is the political, cultural, and commercial center of Sudan."
-  ],
-  "Baghdad": [
-    "Baghdad is the capital city of Iraq.",
-    "It has a rich history dating back over 1,200 years as a center of learning and culture.",
-    "The city is located along the Tigris River."
-  ],
-  "Tehran": [
-    "Tehran is the capital of Iran and its largest city.",
-    "It is a major cultural and economic hub in the Middle East.",
-    "The city is surrounded by the Alborz mountains."
-  ],
-  "Damascus": [
-    "Damascus is the capital city of Syria and one of the oldest continuously inhabited cities in the world.",
-    "It has a rich historical and religious heritage.",
-    "Damascus is known for its ancient architecture and old city markets."
-  ],
-  "Amman": [
-    "Amman is the capital and largest city of Jordan.",
-    "The city features ancient ruins alongside modern buildings.",
-    "Amman serves as the political, cultural, and economic center of Jordan."
-  ],
-  "Beirut": [
-    "Beirut is the capital and largest city of Lebanon.",
-    "It is located on the Mediterranean coast.",
-    "Beirut is known for its vibrant nightlife and rich history."
-  ],
-  "Jerusalem": [
-    "Jerusalem is a city of great religious significance for Judaism, Christianity, and Islam.",
-    "It is the capital of Israel.",
-    "The city contains many important religious landmarks like the Western Wall and the Church of the Holy Sepulchre."
-  ],
-  "Ankara": [
-    "Ankara is the capital city of Turkey.",
-    "It became the capital in 1923, replacing Istanbul.",
-    "Ankara is an important political and cultural center."
-  ],
-  "Athens": [
-    "Athens is the capital and largest city of Greece.",
-    "It is famous for its ancient history and landmarks like the Acropolis.",
-    "Athens is considered the birthplace of democracy."
-  ],
-  "Bucharest": [
-    "Bucharest is the capital and largest city of Romania.",
-    "It is known for its wide boulevards and architecture blending neoclassical and communist styles.",
-    "The Palace of the Parliament in Bucharest is one of the largest buildings in the world."
-  ],
-  "Budapest": [
-    "Budapest is the capital of Hungary and known as the 'Pearl of the Danube.'",
-    "It consists of Buda and Pest, two cities separated by the Danube River.",
-    "Budapest is famous for its thermal baths and historic architecture."
-  ],
-  "Warsaw": [
-    "Warsaw is the capital and largest city of Poland.",
-    "The city was extensively rebuilt after being destroyed in World War II.",
-    "Warsaw has a vibrant cultural life with many theaters, museums, and parks."
-  ],
-  "Prague": [
-    "Prague is the capital city of the Czech Republic.",
-    "It is known for its well-preserved medieval architecture and the Charles Bridge.",
-    "Prague is a major political, cultural, and economic center in Central Europe."
-  ],
-  "Sofia": [
-    "Sofia is the capital and largest city of Bulgaria.",
-    "The city has a history spanning over 2,000 years.",
-    "Sofia is surrounded by mountains and is known for its diverse architecture."
-  ],
-  "Belgrade": [
-    "Belgrade is the capital of Serbia.",
-    "It is located at the confluence of the River Sava and Danube.",
-    "Belgrade has a rich history as a strategic military and trading center."
-  ],
-  "Zagreb": [
-    "Zagreb is the capital and largest city of Croatia.",
-    "It has a mix of 18th and 19th-century architecture and vibrant cultural scenes.",
-    "Zagreb is known for its museums, galleries, and medieval old town."
-  ],
-   "Ljubljana": [
-    "Ljubljana is the capital and largest city of Slovenia.",
-    "It is known for its green spaces and pedestrian-friendly old town.",
-    "The Ljubljanica River runs through the city, with many charming bridges."
-  ],
-  "Skopje": [
-    "Skopje is the capital and largest city of North Macedonia.",
-    "It features a blend of historic Ottoman and modern architecture.",
-    "The city is famous for its statues and monuments along the Vardar River."
-  ],
-  "Vilnius": [
-    "Vilnius is the capital of Lithuania.",
-    "It has one of the largest surviving medieval old towns in Europe.",
-    "Vilnius is known for its Baroque architecture and vibrant arts scene."
-  ],
-  "Riga": [
-    "Riga is the capital and largest city of Latvia.",
-    "It has a UNESCO-listed historic center with Art Nouveau architecture.",
-    "Riga is a major cultural, educational, and financial center in the Baltics."
-  ],
-  "Tallinn": [
-    "Tallinn is the capital of Estonia.",
-    "Its medieval old town is one of the best preserved in Europe.",
-    "Tallinn is an important hub for technology and innovation."
-  ],
-  "Valletta": [
-    "Valletta is the capital city of Malta.",
-    "It is a fortified city founded in the 16th century by the Knights of St. John.",
-    "Valletta is a UNESCO World Heritage Site known for its historic buildings."
-  ],
-  "Monaco": [
-    "Monaco is a tiny independent city-state on the French Riviera.",
-    "It is famous for its luxury casinos and the Monaco Grand Prix.",
-    "Monaco is the second smallest country in the world after the Vatican."
-  ],
-  "Vaduz": [
-    "Vaduz is the capital of Liechtenstein.",
-    "It is known for the Vaduz Castle, home to the Prince of Liechtenstein.",
-    "Vaduz is a small city famous for its banking and finance sector."
-  ],
-  "San Marino": [
-    "San Marino is one of the world's smallest countries, entirely surrounded by Italy.",
-    "Its capital city is also called San Marino.",
-    "It is one of the oldest republics in the world, founded in 301 AD."
-  ],
-  "Andorra la Vella": [
-    "Andorra la Vella is the capital of Andorra.",
-    "It is located in the Pyrenees mountains between France and Spain.",
-    "The city is known for its ski resorts and tax-free shopping."
-  ],
-  "Tbilisi": [
-    "Tbilisi is the capital and largest city of Georgia.",
-    "It is known for its diverse architecture and historic old town.",
-    "Tbilisi sits on the banks of the Kura River and is a cultural hub."
-  ],
-  "Yerevan": [
-    "Yerevan is the capital of Armenia.",
-    "It is one of the world's oldest continuously inhabited cities.",
-    "Yerevan is famous for its pink volcanic stone architecture."
-  ],
-  "Baku": [
-    "Baku is the capital of Azerbaijan.",
-    "It is located on the Caspian Sea and known for its modern skyline.",
-    "The city has a historic old town, Icherisheher, that is UNESCO-listed."
-  ],
-  "Nur-Sultan": [
-    "Nur-Sultan (formerly Astana) is the capital of Kazakhstan.",
-    "It became the capital in 1997, replacing Almaty.",
-    "The city is known for its futuristic architecture."
-  ],
-  "Ulaanbaatar": [
-    "Ulaanbaatar is the capital and largest city of Mongolia.",
-    "It is located in a valley surrounded by mountains.",
-    "The city is the cultural, industrial, and financial heart of Mongolia."
-  ],
-  "Dhaka": [
-    "Dhaka is the capital and largest city of Bangladesh.",
-    "It is one of the most densely populated cities in the world.",
-    "Dhaka is known as the 'City of Mosques' due to its many historic mosques."
-  ],
-  "Hanoi": [
-    "Hanoi is the capital of Vietnam.",
-    "It is famous for its centuries-old architecture and rich culture.",
-    "The city sits on the banks of the Red River."
-  ],
-  "Jakarta": [
-    "Jakarta is the capital and largest city of Indonesia.",
-    "It is located on the northwest coast of Java.",
-    "Jakarta is the economic, cultural, and political center of Indonesia."
-  ],
-  "Bangkok": [
-    "Bangkok is the capital of Thailand.",
-    "It is known for its ornate temples and vibrant street life.",
-    "The city sits on the Chao Phraya River."
-  ],
-  "Kuala Lumpur": [
-    "Kuala Lumpur is the capital of Malaysia.",
-    "It is famous for the Petronas Twin Towers, once the tallest buildings in the world.",
-    "Kuala Lumpur is a major financial and cultural center in Southeast Asia."
-  ],
-  "Singapore": [
-    "Singapore is a city-state and island country in Southeast Asia.",
-    "It is one of the world's busiest ports and financial hubs.",
-    "Singapore is known for its strict laws and cleanliness."
-  ],
-  "Manila": [
-    "Manila is the capital of the Philippines.",
-    "It is known for its historic sites including Intramuros, a walled city.",
-    "Manila is a densely populated bayside city on the island of Luzon."
-  ],
-  "Seoul": [
-    "Seoul is the capital of South Korea.",
-    "It is known for its technology industry and modern skyscrapers.",
-    "The city has a rich history dating back over 2,000 years."
-  ],
-  "Tokyo": [
-    "Tokyo is the capital of Japan and one of the largest metropolitan areas in the world.",
-    "It is famous for its mix of traditional and ultramodern architecture.",
-    "Tokyo hosted the 2020 Summer Olympics."
-  ],
-  "Osaka": [
-    "Osaka is a large port city in Japan's Kansai region.",
-    "It is known for its modern architecture, nightlife, and street food.",
-    "Osaka Castle is one of Japan's most famous landmarks."
-  ],
-  "Nagoya": [
-    "Nagoya is the fourth-largest city in Japan.",
-    "It is an important industrial and shipping center.",
-    "Nagoya Castle is a notable historic site."
-  ],
-  "Fukuoka": [
-    "Fukuoka is the largest city on the island of Kyushu in Japan.",
-    "It is known for its ancient temples and modern shopping malls.",
-    "Fukuoka hosts the annual Hakata Gion Yamakasa festival."
-  ],
-  "Sapporo": [
-    "Sapporo is the largest city on Japan's northern island, Hokkaido.",
-    "It is famous for its annual snow festival featuring ice sculptures.",
-    "Sapporo is a popular winter sports destination."
-  ],
-  "Kyoto": [
-    "Kyoto was the former capital of Japan for over a thousand years.",
-    "It is known for its classical Buddhist temples and gardens.",
-    "Kyoto is famous for traditional tea ceremonies and geisha culture."
-  ],
-  "Changsha": [
-    "Changsha is the capital of Hunan Province in China.",
-    "It is known for its rich history dating back over 3,000 years.",
-    "The city is famous for the Yuelu Academy, one of the oldest academies in China."
-  ],
-  "Ningbo": [
-    "Ningbo is a major port city in Zhejiang Province, China.",
-    "It has been a significant trading hub since the Tang Dynasty.",
-    "Ningbo is famous for its historic Tianyi Pavilion, one of the oldest private libraries in Asia."
-  ],
-  "Qingdao": [
-    "Qingdao is a coastal city in Shandong Province, China.",
-    "It is known for its German colonial architecture and the Tsingtao Brewery.",
-    "Qingdao hosts the annual Qingdao International Beer Festival."
-  ],
-  "Dalian": [
-    "Dalian is a major port and industrial city in Liaoning Province, China.",
-    "It is known for its beaches and modern architecture.",
-    "Dalian has a large software and IT industry."
-  ],
-  "Zhengzhou": [
-    "Zhengzhou is the capital of Henan Province, China.",
-    "It is a major transportation hub with one of China's largest railway stations.",
-    "Zhengzhou is near the ancient city of Shangqiu, rich in archaeological sites."
-  ],
-  "Shenyang": [
-    "Shenyang is the largest city in Northeast China.",
-    "It served as the capital of the Qing Dynasty before Beijing.",
-    "Shenyang is known for the Imperial Palace, a UNESCO World Heritage site."
-  ],
-  "Jinan": [
-    "Jinan is the capital of Shandong Province, China.",
-    "It is famous for its numerous natural springs.",
-    "The Baotu Spring Park is a popular tourist attraction in Jinan."
-  ],
-  "Harbin": [
-    "Harbin is the capital of Heilongjiang Province, China.",
-    "It hosts the world-famous Harbin International Ice and Snow Sculpture Festival.",
-    "Harbin has a strong Russian influence in its architecture and culture."
-  ],
-  "Taiyuan": [
-    "Taiyuan is the capital of Shanxi Province, China.",
-    "It is an important industrial city with a history dating back over 2,500 years.",
-    "Taiyuan is known for its coal mining industry."
-  ],
-  "Kunming": [
-    "Kunming is the capital of Yunnan Province, China.",
-    "It is called the 'Spring City' due to its mild climate.",
-    "Kunming is a gateway to Southeast Asia and known for its diverse ethnic cultures."
-  ],
-  "Urumqi": [
-    "Urumqi is the capital of Xinjiang Uyghur Autonomous Region, China.",
-    "It is one of the most remote cities from any ocean in the world.",
-    "Urumqi is a cultural melting pot of many ethnic groups."
-  ],
-  "Shijiazhuang": [
-    "Shijiazhuang is the capital of Hebei Province, China.",
-    "It developed rapidly as a transportation and industrial center.",
-    "The city has seen significant urban growth in recent decades."
-  ],
-  "Fuzhou": [
-    "Fuzhou is the capital of Fujian Province, China.",
-    "It is known for its traditional architecture and mountainous landscape.",
-    "Fuzhou has a rich history of maritime trade."
-  ],
-  "Xiamen": [
-    "Xiamen is a coastal city in Fujian Province, China.",
-    "It is famous for its colonial architecture and Gulangyu Island.",
-    "Xiamen is an important port and trade city."
-  ],
-  "Hefei": [
-    "Hefei is the capital of Anhui Province, China.",
-    "It is known for its scientific research institutions and universities.",
-    "Hefei has a history that dates back over 2,000 years."
-  ],
-  "Nanchang": [
-    "Nanchang is the capital of Jiangxi Province, China.",
-    "It played a significant role in the Chinese communist revolution.",
-    "The city is known for its Tengwang Pavilion, a famous ancient building."
-  ],
-  "Changchun": [
-    "Changchun is the capital of Jilin Province, China.",
-    "It is a major center for the automotive industry.",
-    "The city has a cold continental climate with snowy winters."
-  ],
-  "Hohhot": [
-    "Hohhot is the capital of Inner Mongolia Autonomous Region, China.",
-    "It is known as the 'Blue City' due to its numerous temples.",
-    "Hohhot has a strong Mongolian cultural influence."
-  ],
-  "Nanning": [
-    "Nanning is the capital of Guangxi Zhuang Autonomous Region, China.",
-    "It is known as the 'Green City' for its lush tropical plants.",
-    "Nanning hosts the annual China-ASEAN Expo."
-  ],
-  "Lanzhou": [
-    "Lanzhou is the capital of Gansu Province, China.",
-    "It is located on the banks of the Yellow River.",
-    "Lanzhou is famous for its hand-pulled noodles."
-  ],
-  "Taipei": [
-    "Taipei is the capital of Taiwan.",
-    "It is famous for Taipei 101, one of the world's tallest skyscrapers.",
-    "Taipei is a major cultural and economic center in East Asia."
-  ],
-  "Hong Kong": [
-    "Hong Kong is a Special Administrative Region of China.",
-    "It is a major global financial hub with a busy harbor.",
-    "Hong Kong is known for its skyline and vibrant nightlife."
-  ],
-  "Macau": [
-    "Macau is a Special Administrative Region of China known for its casinos.",
-    "It was a Portuguese colony until 1999.",
-    "Macau has a unique blend of Chinese and Portuguese cultures."
-  ],
-  "Sydney": [
-    "Sydney is the largest city in Australia.",
-    "It is famous for the Sydney Opera House and Harbour Bridge.",
-    "Sydney has beautiful beaches like Bondi Beach."
-  ],
-  "Melbourne": [
-    "Melbourne is the capital of Victoria, Australia.",
-    "It is known for its arts scene, coffee culture, and sports events.",
-    "Melbourne hosts the Australian Open tennis tournament."
-  ],
-  "Brisbane": [
-    "Brisbane is the capital of Queensland, Australia.",
-    "It is known for its subtropical climate and outdoor lifestyle.",
-    "The city lies on the Brisbane River."
-  ],
-  "Perth": [
-    "Perth is the capital of Western Australia.",
-    "It is one of the most isolated major cities in the world.",
-    "Perth is known for its beaches and vibrant arts scene."
-  ],
-  "Adelaide": [
-    "Adelaide is the capital of South Australia.",
-    "It is famous for its festivals and food and wine culture.",
-    "Adelaide is surrounded by renowned wine regions."
-  ],
-  "Auckland": [
-    "Auckland is the largest city in New Zealand.",
-    "It is known as the 'City of Sails' due to its boating culture.",
-    "Auckland sits between two harbors on a narrow isthmus."
-  ],
-  "Wellington": [
-    "Wellington is the capital of New Zealand.",
-    "It is known for its vibrant arts scene and harbor views.",
-    "Wellington hosts the New Zealand Film Festival."
-  ],
-  "Christchurch": [
-    "Christchurch is the largest city on New Zealand's South Island.",
-    "It is known as the 'Garden City' for its parks and gardens.",
-    "The city has been rebuilding after major earthquakes in 2010 and 2011."
-  ],
-  "Toronto": [
-    "Toronto is the largest city in Canada.",
-    "It is a multicultural hub with over half its residents born outside Canada.",
-    "The CN Tower is a famous landmark in Toronto."
-  ],
-  "Montreal": [
-    "Montreal is the largest city in Quebec, Canada.",
-    "It is known for its French heritage and vibrant cultural scene.",
-    "Montreal hosts the annual Jazz Festival, one of the largest in the world."
-  ],
-  "Vancouver": [
-    "Vancouver is a major city in British Columbia, Canada.",
-    "It is surrounded by mountains and the Pacific Ocean.",
-    "Vancouver is known for its outdoor recreational opportunities."
-  ],
-  "Calgary": [
-    "Calgary is a city in Alberta, Canada.",
-    "It hosts the annual Calgary Stampede, a large rodeo festival.",
-    "Calgary is known for its proximity to the Rocky Mountains."
-  ],
-  "Edmonton": [
-    "Edmonton is the capital of Alberta, Canada.",
-    "It has one of the largest urban park systems in North America.",
-    "Edmonton is known for its oil and gas industry."
-  ],
-  "Ottawa": [
-    "Ottawa is the capital city of Canada.",
-    "It is home to Parliament Hill and many national museums.",
-    "The city hosts Winterlude, a popular winter festival."
-  ],
-  "Abidjan": [
-    "Abidjan is the economic capital of Côte d'Ivoire.",
-    "It is known for its modern skyline and lagoon location.",
-    "Abidjan is a major port city in West Africa."
-  ],
-  "Dar es Salaam": [
-    "Dar es Salaam is the largest city in Tanzania.",
-    "It was the former capital before Dodoma.",
-    "The city is an important trade and transportation hub."
-  ],
-  "Harare": [
-    "Harare is the capital of Zimbabwe.",
-    "It is known for its beautiful parks and gardens.",
-    "Harare is a center of commerce and government in Zimbabwe."
-  ],
-  "Kampala": [
-    "Kampala is the capital of Uganda.",
-    "It is located near Lake Victoria.",
-    "Kampala is built on seven hills, giving it a unique landscape."
-  ],
-  "Lusaka": [
     "Lusaka is the capital of Zambia.",
+    "It is a rapidly growing city and a commercial center.",
     "It is known for its vibrant markets and cultural diversity.",
     "Lusaka has experienced rapid urban growth over recent decades."
   ],
@@ -1765,7 +1296,7 @@ CITY_FACTS = {
   "Arzamas": [
     "Arzamas is a historic city in Nizhny Novgorod Oblast, Russia.",
     "It is known for its architectural monuments.",
-    "The city played a role in Russia’s literary and cultural history."
+    "The city played a role in Russia's literary and cultural history."
   ],
   "Veliky Novgorod": [
     "Veliky Novgorod is one of Russia's oldest cities.",
@@ -1828,7 +1359,7 @@ CITY_FACTS = {
     "The city developed rapidly in the early 20th century."
   ],
   "Nizhnevartovsk": [
-    "Nizhnevartovsk is a key city in Russia’s oil industry.",
+    "Nizhnevartovsk is a key city in Russia's oil industry.",
     "It is located in the Khanty-Mansi Autonomous Okrug.",
     "The city developed around oil field exploration."
   ],
@@ -2254,11 +1785,32 @@ CITY_FACTS = {
   ],
   "gurgaon": [
     "Gurgaon is a major financial and industrial hub in the National Capital Region (NCR).",
-    "NI lives hereee.",
+    "NI lives here.",
     "Gurgaon has rapidly developed into a center for IT, manufacturing, and automobile industries."
 ]
-    # Add more cities and facts here
+   
 }
+
+def get_weather_emoji(weather_code):
+
+    if 200 <= weather_code < 300:
+        return '⛈️'  
+    elif 300 <= weather_code < 400:
+        return '🌦️' 
+    elif 500 <= weather_code < 600:
+        if weather_code >= 502:
+            return '🌧️' 
+        return '🌦️'  
+    elif 600 <= weather_code < 700:
+        return '❄️' 
+    elif 700 <= weather_code < 800:
+        return '🌫️'  
+    elif weather_code == 800:
+        return '☀️' 
+    elif 801 <= weather_code < 805:
+        return '☁️'
+    else:
+        return '🌈'  
 
 @app.route('/')
 def index():
@@ -2287,6 +1839,8 @@ def get_weather():
         response.raise_for_status()
 
         weather_data = response.json()
+        weather_code = weather_data['weather'][0]['id']
+        weather_emoji = get_weather_emoji(weather_code)
 
         result = {
             'city': weather_data.get('name', 'N/A'),
@@ -2295,6 +1849,8 @@ def get_weather():
             'feels_like': round(weather_data['main']['feels_like']),
             'description': weather_data['weather'][0]['description'].capitalize(),
             'icon': weather_data['weather'][0]['icon'],
+            'weather_code': weather_code,
+            'weather_emoji': weather_emoji,
             'humidity': weather_data['main']['humidity'],
             'wind_speed': weather_data['wind']['speed'],
             'pressure': weather_data['main']['pressure'],
@@ -2310,5 +1866,5 @@ def get_weather():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # use the port Render sets
+    port = int(os.environ.get("PORT", 5000))  
     app.run(host="0.0.0.0", port=port, debug=True)
