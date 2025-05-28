@@ -995,9 +995,19 @@
           }
         }
 
-        createWeatherAnimation(data.weather_code);
+        // Clear existing weather animation
+        const background = document.querySelector('.weather-background');
+        if (background) {
+          background.innerHTML = '';
+        }
 
-        
+        // Create new weather animation
+        if (data.weather_code) {
+          console.log('Creating weather animation for code:', data.weather_code);
+          createWeatherAnimation(data.weather_code);
+        }
+
+        // Show date & time
         if (data.dt && data.timezone) {
           dateTimeElement.textContent = formatDateTime(data.dt, data.timezone);
         } else {
@@ -1005,7 +1015,7 @@
           dateTimeElement.textContent = now.toLocaleString();
         }
 
-        
+        // Update current weather information
         document.getElementById('temperature').textContent = `${data.temp}°C`;
         document.getElementById('description').innerHTML = `${data.weather_emoji ? data.weather_emoji + ' ' : ''}${data.description}`;
         document.getElementById('feels-like').textContent = `${data.feels_like}°C`;
@@ -1013,17 +1023,17 @@
         document.getElementById('wind-speed').textContent = `${data.wind_speed} m/s`;
         document.getElementById('pressure').textContent = `${data.pressure} hPa`;
 
-        
+        // Update weather icon
         const weatherIcon = document.getElementById('weather-icon');
         weatherIcon.style.backgroundImage = `url(https://openweathermap.org/img/wn/${data.icon}@2x.png)`;
 
-        
+        // Show fact if available
         if (data.fact) {
           factBox.textContent = `Did you know? ${data.fact}`;
           factBox.style.display = 'block';
         }
 
-        
+        // Update forecast if available
         if (data.forecast && data.forecast.length > 0) {
           const forecastGrid = document.getElementById('forecast-grid');
           forecastGrid.innerHTML = '';
@@ -1048,7 +1058,7 @@
           forecastContainer.style.display = 'block';
         }
 
-        
+        // Show weather info
         weatherInfoElement.style.display = 'block';
 
       } catch (error) {
@@ -1059,6 +1069,28 @@
       }
     }
 
+    // Initialize weather animation on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      // Set default city
+      document.getElementById('city-input').value = 'Hyderabad';
+      
+      // Create initial weather animation
+      const background = document.querySelector('.weather-background');
+      if (background) {
+        background.innerHTML = '';
+        // Create a default clear sky animation
+        createWeatherAnimation(800);
+      }
+      
+      // Get initial weather
+      getWeather();
+    });
+
+    // Add event listener for Enter key
+    document.getElementById('city-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') getWeather();
+    });
+
     function showError(message) {
       const errorElement = document.getElementById('error');
       const errorMessage = document.getElementById('error-message');
@@ -1067,17 +1099,6 @@
       document.getElementById('weather-info').style.display = 'none';
       document.getElementById('loading').style.display = 'none';
     }
-
-    
-    document.getElementById('city-input').addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') getWeather();
-    });
-
-        
-    window.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('city-input').value = 'Hyderabad';
-      getWeather();
-    });
   </script>
 </body>
 </html>
