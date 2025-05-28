@@ -750,11 +750,13 @@
         return;
       }
       
+      // Clear existing animations
       background.innerHTML = '';
       
+      // Remove all weather classes
       document.body.classList.remove('clear', 'clouds', 'rain', 'snow', 'thunderstorm', 'mist', 'windy', 'heavy-rain');
       
-     
+      // Create animations based on weather code
       if (weatherCode >= 800 && weatherCode < 801) {
         console.log('Creating clear sky animation');
         document.body.classList.add('clear');
@@ -764,7 +766,6 @@
         sun.style.top = '20%';
         background.appendChild(sun);
       }
-      
       else if (weatherCode >= 801 && weatherCode < 805) {
         console.log('Creating cloud animation');
         document.body.classList.add('clouds');
@@ -793,11 +794,9 @@
             
             const baseOpacity = 0.8 - (layer * 0.1);
             cloud.style.opacity = `${baseOpacity + Math.random() * 0.2}`;
-           
             
             const duration = 12 + (layer * 3);
             cloud.style.animationDuration = `${duration}s`;
-            
             
             const horizontalOffset = Math.random() * 30;
             cloud.style.left = `${-20 - horizontalOffset}vw`;
@@ -806,13 +805,12 @@
           }
         }
       }
-      // Rain
       else if (weatherCode >= 500 && weatherCode < 600) {
-        if (weatherCode >= 502) { // Heavy rain
+        if (weatherCode >= 502) {
           document.body.classList.add('heavy-rain');
           for (let i = 0; i < 150; i++) {
             const rain = document.createElement('div');
-            rain.className = 'heavy-rain';
+            rain.className = 'rain-drop';
             rain.style.left = `${Math.random() * 100}%`;
             rain.style.animationDelay = `${Math.random() * 1.2}s`;
             
@@ -846,7 +844,6 @@
           }
         }
       }
-      
       else if (weatherCode >= 600 && weatherCode < 700) {
         document.body.classList.add('snow');
         for (let i = 0; i < 100; i++) {
@@ -862,24 +859,21 @@
           background.appendChild(snow);
         }
       }
-      
       else if (weatherCode >= 200 && weatherCode < 300) {
         document.body.classList.add('thunderstorm');
         const thunder = document.createElement('div');
         thunder.className = 'lightning';
         background.appendChild(thunder);
         
-        
         for (let i = 0; i < 150; i++) {
           const rain = document.createElement('div');
-          rain.className = 'heavy-rain';
+          rain.className = 'rain-drop';
           rain.style.left = `${Math.random() * 100}%`;
           rain.style.animationDelay = `${Math.random() * 1.5}s`;
           rain.style.opacity = `${Math.random() * 0.2 + 0.8}`;
           background.appendChild(rain);
         }
       }
-      
       else if (weatherCode >= 700 && weatherCode < 800) {
         document.body.classList.add('mist');
         const mistLayers = 3;
@@ -888,27 +882,21 @@
             const cloud = document.createElement('div');
             cloud.className = 'cloud';
             
-            
             const baseSize = 150 + (layer * 50);
             cloud.style.width = `${baseSize + Math.random() * 100}px`;
             cloud.style.height = `${(baseSize + Math.random() * 100) * 0.4}px`;
             
-            
             const baseHeight = 10 + (layer * 20);
             cloud.style.top = `${baseHeight + Math.random() * 15}%`;
-            
             
             const startPosition = -100 - (Math.random() * 50);
             cloud.style.left = `${startPosition}%`;
             
-            
             const baseDelay = layer * 7;
             cloud.style.animationDelay = `${baseDelay + Math.random() * 5}s`;
             
-            
             const baseOpacity = 0.5 - (layer * 0.1);
             cloud.style.opacity = `${baseOpacity + Math.random() * 0.1}`;
-            
             
             const duration = 25 + (layer * 5);
             cloud.style.animationDuration = `${duration}s`;
@@ -917,10 +905,8 @@
           }
         }
       }
-
       else if (weatherCode >= 700 && weatherCode < 800) {
         document.body.classList.add('windy');
-        
         
         for (let i = 0; i < 20; i++) {
           const windLine = document.createElement('div');
@@ -931,7 +917,6 @@
           windLine.style.animationDelay = `${Math.random() * 2}s`;
           background.appendChild(windLine);
         }
-        
         
         for (let i = 0; i < 8; i++) {
           const cloud = document.createElement('div');
@@ -1070,34 +1055,32 @@
     }
 
     // Initialize weather animation on page load
-    window.addEventListener('DOMContentLoaded', () => {
-      // Set default city
-      document.getElementById('city-input').value = 'Hyderabad';
-      
-      // Create initial weather animation
-      const background = document.querySelector('.weather-background');
-      if (background) {
-        background.innerHTML = '';
-        // Create a default clear sky animation
-        createWeatherAnimation(800);
-      }
-      
-      // Get initial weather
-      getWeather();
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Page loaded, initializing weather animation');
+        const cityInput = document.getElementById('city-input');
+        if (cityInput) {
+            cityInput.value = 'Hyderabad';
+            // Create initial weather animation
+            createWeatherAnimation(800); // Default to clear sky
+            // Fetch initial weather
+            getWeather();
+        }
     });
 
     // Add event listener for Enter key
     document.getElementById('city-input').addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') getWeather();
+        if (e.key === 'Enter') {
+            getWeather();
+        }
     });
 
     function showError(message) {
-      const errorElement = document.getElementById('error');
-      const errorMessage = document.getElementById('error-message');
-      errorMessage.textContent = message;
-      errorElement.style.display = 'flex';
-      document.getElementById('weather-info').style.display = 'none';
-      document.getElementById('loading').style.display = 'none';
+        const errorDiv = document.getElementById('error');
+        errorDiv.textContent = message;
+        errorDiv.style.display = 'block';
+        setTimeout(() => {
+            errorDiv.style.display = 'none';
+        }, 3000);
     }
   </script>
 </body>
